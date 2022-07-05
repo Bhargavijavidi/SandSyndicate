@@ -3,12 +3,12 @@
     >
     <item>
         <shape>
-            <solid android:color="@color/purple_700"/>
-            <gradient android:startColor="@color/purple_700"
+            <solid android:color="#F32106"/>
+            <gradient android:startColor="#F63E06"
                 android:endColor="@color/purple_700"/>
             <corners
-                android:bottomRightRadius="60dp"
-                android:bottomLeftRadius="60dp"/>
+                android:topRightRadius="60dp"
+                android:topLeftRadius="60dp"/>
 
 
         </shape>
