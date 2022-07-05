@@ -5,7 +5,7 @@
     <shape android:shape="rectangle">
         <gradient android:startColor="@color/ash"
             android:endColor="@color/ash"/>
-        <corners android:bottomRightRadius="200dp" />
+        <corners android:topLeftRadius="200dp" />
         <stroke android:dashWidth="20dp" android:dashGap="20dp"/>
     </shape>
 
