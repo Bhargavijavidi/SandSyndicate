@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sandsyndicate">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SandSyndicate"
+        tools:targetApi="31">
+        <activity
+            android:name=".ApproverHome"
+            android:exported="false" />
+        <activity
+            android:name=".Approve"
+            android:exported="false" />
+        <activity
+            android:name=".TruckOwner.TruckOwnerHome"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.InputerHome"
+            android:exported="false" />
+        <activity
+            android:name=".Approver.ApproverHome"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".TruckOwner.Upload"
+            android:exported="false" />
+        <activity
+            android:name=".Approver.Approve"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.Logout"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.LabourDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.MachineInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.AddDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminExcel"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminApprove"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminView"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminAccess"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Logo"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
