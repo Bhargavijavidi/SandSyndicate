@@ -3,10 +3,14 @@
     >
     <item>
         <shape>
-            <solid android:color="@color/ash"/>
+            <solid android:color="@color/purple_700"/>
+            <gradient android:startColor="@color/purple_700"
+                android:endColor="@color/purple_700"/>
             <corners
-                android:bottomRightRadius="300dp"
-                android:bottomLeftRadius="100dp"/>
+                android:bottomRightRadius="60dp"
+                android:bottomLeftRadius="60dp"/>
+
+
         </shape>
     </item>
 
