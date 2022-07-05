@@ -14,10 +14,10 @@
         android:theme="@style/Theme.SandSyndicate"
         tools:targetApi="31">
         <activity
-            android:name=".ApproverHome"
+            android:name=".Approver.ApproverHome"
             android:exported="false" />
         <activity
-            android:name=".Approve"
+            android:name=".Approver.Approve"
             android:exported="false" />
         <activity
             android:name=".TruckOwner.TruckOwnerHome"
@@ -26,16 +26,10 @@
             android:name=".Inputer.InputerHome"
             android:exported="false" />
         <activity
-            android:name=".Approver.ApproverHome"
-            android:exported="false" />
-        <activity
             android:name=".Admin.AdminHome"
             android:exported="false" />
         <activity
             android:name=".TruckOwner.Upload"
-            android:exported="false" />
-        <activity
-            android:name=".Approver.Approve"
             android:exported="false" />
         <activity
             android:name=".Inputer.Logout"
@@ -72,9 +66,6 @@
             android:exported="false" />
         <activity
             android:name=".Authentication.Login"
-            android:exported="false" />
-        <activity
-            android:name=".Admin.Logo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
