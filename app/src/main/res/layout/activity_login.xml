@@ -20,7 +20,8 @@
         android:layout_height="243dp"
         android:orientation="vertical"
 
-        ><TextView
+        >
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -42,6 +43,7 @@
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/USER"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -64,6 +66,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PASSWORD"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
