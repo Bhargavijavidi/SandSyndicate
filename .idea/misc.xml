@@ -33,10 +33,17 @@
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_trail.xml" value="0.1731509191962377" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1025" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/drawable/curve.xml" value="0.1" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/drawable/cutbackground.xml" value="0.1" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.1" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/drawable/ic_wave__9_.xml" value="0.1" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/drawable/item.xml" value="0.1" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/layout/activity_admin_home.xml" value="0.22" />
+        <entry key="..\:/Users/shash/StudioProjects/SandSyndicate/app/src/main/res/layout/activity_approver_home.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
