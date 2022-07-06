@@ -88,6 +88,7 @@
                         android:background="@drawable/ic_baseline_home_24" />
 
                     <TextView
+                        android:id="@+id/Home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -124,6 +125,7 @@
                         android:background="@drawable/ic_baseline_accessibility_24" />
 
                     <TextView
+                        android:id="@+id/AdminAccess"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -168,6 +170,7 @@
                         android:background="@drawable/ic_baseline_check_circle_outline_24" />
 
                     <TextView
+                        android:id="@+id/Approve"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -202,6 +205,7 @@
                         android:background="@drawable/ic_baseline_list_alt_24" />
 
                     <TextView
+                        android:id="@+id/Excel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -243,6 +247,7 @@
                         android:background="@drawable/ic_baseline_account_circle_24" />
 
                     <TextView
+                        android:id="@+id/Profile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -277,6 +282,7 @@
                         android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
                     <TextView
+                        android:id="@+id/Adminlogout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

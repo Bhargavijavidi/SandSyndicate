@@ -14,6 +14,24 @@
         android:theme="@style/Theme.SandSyndicate"
         tools:targetApi="31">
         <activity
+            android:name=".Access"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Approversanddetails"
+            android:exported="false" />
+        <activity
+            android:name=".Expenses"
+            android:exported="false" />
+        <activity
+            android:name=".MachineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ApproveDetails"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false">
             <intent-filter>

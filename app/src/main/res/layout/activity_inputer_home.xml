@@ -73,6 +73,7 @@
                         android:background="@drawable/zoom" />
 
                     <TextView
+                        android:id="@+id/Sanddetails"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -107,6 +108,7 @@
                         android:background="@drawable/ic_round_domain_24"/>
 
                     <TextView
+                        android:id="@+id/addmachine"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -147,6 +149,7 @@
                         android:background="@drawable/ic_baseline_attach_money_24" />
 
                     <TextView
+                        android:id="@+id/addexpense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -181,6 +184,7 @@
                         android:background="@drawable/ic_baseline_local_atm_24" />
 
                     <TextView
+                        android:id="@+id/viewexpense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -221,6 +225,7 @@
                         android:background="@drawable/ic_baseline_hourglass_empty_24" />
 
                     <TextView
+                        android:id="@+id/viewsanddetails"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -255,6 +260,7 @@
                         android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
                     <TextView
+                        android:id="@+id/inputterlogout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

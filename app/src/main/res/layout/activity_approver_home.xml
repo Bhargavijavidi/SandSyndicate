@@ -149,7 +149,7 @@
                     android:background="@drawable/view" />
 
                 <TextView
-                    android:id="@+id/Machinedetails"
+                    android:id="@+id/ApproverMachinedetails"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                    android:gravity="center"
@@ -184,7 +184,7 @@
                     android:background="@drawable/ic_baseline_attach_money_24" />
 
                 <TextView
-                    android:id="@+id/Expenses"
+                    android:id="@+id/ApproverExpenses"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
