@@ -53,6 +53,7 @@
             android:orientation="vertical"
             >
             <androidx.cardview.widget.CardView
+                android:id="@+id/truckList"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -90,6 +91,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/Profile"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -131,6 +133,8 @@
             android:layout_margin="1dp"
             android:orientation="vertical">
             <androidx.cardview.widget.CardView
+                android:id="@+id/truckDetail"
+
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -168,6 +172,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -191,6 +196,7 @@
                         android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
                     <TextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
