@@ -78,6 +78,7 @@
                         android:background="@drawable/zoom" />
 
                     <TextView
+                        android:id="@+id/TruckList"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -115,6 +116,7 @@
                         android:background="@drawable/ic_baseline_person_24" />
 
                     <TextView
+                        android:id="@+id/TruckProfile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -159,6 +161,7 @@
                         android:background="@drawable/ic_baseline_fire_truck_24" />
 
                     <TextView
+                        android:id="@+id/TruckDetails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -190,13 +193,13 @@
                     android:padding="30dp">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
                         android:layout_gravity="center"
                         android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
                     <TextView
-
+                         android:id="@+id/TruckLogout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"

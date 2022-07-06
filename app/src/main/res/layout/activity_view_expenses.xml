@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Approver.ApproveDetails">
+    tools:context=".Inputer.ViewExpenses">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:orientation="vertical"
-        android:background="@drawable/approve">
+        android:background="@drawable/expenses">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Approve Details"
+            android:text=" View Expenses "
             android:textSize="40dp"
-            android:textColor="@color/teal_200"
+            android:textColor="@color/white"
             android:gravity="center"
+
             android:textStyle="bold"
             />
 
     </LinearLayout>
-
 
 </LinearLayout>

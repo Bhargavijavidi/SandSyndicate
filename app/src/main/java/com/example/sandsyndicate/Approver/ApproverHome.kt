@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.telecom.Call
 import android.view.LayoutInflater
 import com.example.sandsyndicate.*
+import com.example.sandsyndicate.Authentication.Login
 import com.example.sandsyndicate.Inputer.Logout
 import com.example.sandsyndicate.databinding.ActivityApproverHomeBinding
 
@@ -36,7 +37,7 @@ class ApproverHome : AppCompatActivity() {
             startActivity(sandintent)
         }
         binding.ApproverLogout.setOnClickListener {
-            var logintent=Intent(this,Logout::class.java)
+            var logintent=Intent(this,Login::class.java)
             startActivity(logintent)
         }
     }

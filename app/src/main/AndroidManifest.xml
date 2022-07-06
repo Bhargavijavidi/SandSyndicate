@@ -14,6 +14,21 @@
         android:theme="@style/Theme.SandSyndicate"
         tools:targetApi="31">
         <activity
+            android:name=".TruckList"
+            android:exported="false" />
+        <activity
+            android:name=".TruckDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSandDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ViewExpenses"
+            android:exported="false" />
+        <activity
+            android:name=".SandDetails"
+            android:exported="false" />
+        <activity
             android:name=".Access"
             android:exported="false" />
         <activity

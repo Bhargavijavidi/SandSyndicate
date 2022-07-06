@@ -147,6 +147,7 @@
 
     </LinearLayout>
         <Button
+            android:id="@+id/Signup"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -157,5 +158,25 @@
             >
 
         </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/Backlogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_700"
+        android:text=" Back to Login"
+        android:textSize="18dp"
+        >
 
-    </LinearLayout>
+    </Button>
+
+
+</LinearLayout>

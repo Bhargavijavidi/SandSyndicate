@@ -3,6 +3,9 @@ package com.example.sandsyndicate.TruckOwner
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.sandsyndicate.Authentication.Login
+import com.example.sandsyndicate.Inputer.Logout
+import com.example.sandsyndicate.Profile
 import com.example.sandsyndicate.R
 import com.example.sandsyndicate.databinding.ActivityTruckOwnerHomeBinding
 
@@ -12,21 +15,21 @@ class TruckOwnerHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTruckOwnerHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.truckList.setOnClickListener {
+        binding.TruckList.setOnClickListener {
             var Homeintent= Intent(this,TruckList::class.java)
             startActivity(Homeintent)
         }
-        binding.Profile.setOnClickListener {
-            var accessintent=Intent(this,TruckProfile::class.java)
+        binding.TruckProfile.setOnClickListener {
+            var accessintent=Intent(this,Profile::class.java)
             startActivity(accessintent)
         }
-        binding.truckDetail.setOnClickListener {
+        binding.TruckDetails.setOnClickListener {
             var approveintent=Intent(this,TruckDetails::class.java)
             startActivity(approveintent)
         }
-        binding.logout.setOnClickListener {
-            var excelintent=Intent(this,TruckLogout::class.java)
-            startActivity(excelintent)
+        binding.TruckLogout.setOnClickListener {
+            var logintent=Intent(this,Login::class.java)
+            startActivity(logintent)
 
         }
         }

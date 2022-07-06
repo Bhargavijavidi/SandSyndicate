@@ -4,13 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.sandsyndicate.Approver.Approve
+import com.example.sandsyndicate.Authentication.Login
 import com.example.sandsyndicate.Inputer.Logout
 import com.example.sandsyndicate.R
 import com.example.sandsyndicate.databinding.ActivityAdminHomeBinding
 
 class AdminHome : AppCompatActivity() {
     private lateinit var binding:ActivityAdminHomeBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityAdminHomeBinding.inflate(layoutInflater)
@@ -33,7 +33,7 @@ class AdminHome : AppCompatActivity() {
 
          }
         binding.Adminlogout.setOnClickListener {
-            var logintent=Intent(this,Logout::class.java)
+            var logintent=Intent(this,Login::class.java)
             startActivity(logintent)
         }
 
