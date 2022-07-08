@@ -17,7 +17,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -43,7 +42,8 @@
             android:textStyle="bold"
             android:textColor="@color/ash"
             android:textSize="30dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10pt"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,9 +51,12 @@
         android:layout_margin="1dp"
         android:orientation="horizontal">
         <androidx.cardview.widget.CardView
+            android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -63,21 +66,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="30dp">
+                android:padding="10dp">
 
                 <ImageView
 
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/zoom" />
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/zoom"/>
 
                 <TextView
-                    android:id="@+id/Details"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Details"
+                    android:gravity="center"
+                    android:text="Approve Details"
                     android:textSize="20dp"
                     android:textStyle="bold"
 
@@ -87,9 +91,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/Approverprofile"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -102,16 +109,17 @@
                 android:padding="30dp">
 
                 <ImageView
+
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_account_circle_24" />
 
                 <TextView
-                    android:id="@+id/Approverprofile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text="Profile"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -127,9 +135,12 @@
         android:layout_margin="1dp"
         android:orientation="horizontal">
         <androidx.cardview.widget.CardView
+            android:id="@+id/ApproverMachinedetails"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -139,22 +150,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="30dp">
+                android:padding="10dp">
 
                 <ImageView
 
                     android:layout_width="45dp"
                     android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:background="@drawable/view" />
 
                 <TextView
-                    android:id="@+id/ApproverMachinedetails"
-                    android:layout_width="wrap_content"
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                   android:gravity="center"
-                    android:text="Machine Details"
+                    android:text=" View Machine Details"
                     android:textSize="20dp"
+                    android:gravity="center"
                     android:textStyle="bold"
 
                     />
@@ -163,9 +175,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/ApproverExpenses"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -175,22 +190,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="30dp">
+                android:padding="10dp">
 
                 <ImageView
+
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_attach_money_24" />
 
                 <TextView
-                    android:id="@+id/ApproverExpenses"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Expenses"
+                    android:gravity="center"
+                    android:text="View Expense Details"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
             </LinearLayout>
 
 
@@ -203,9 +220,12 @@
         android:layout_margin="1dp"
         android:orientation="horizontal">
         <androidx.cardview.widget.CardView
+            android:id="@+id/Sanddetails"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -215,33 +235,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="30dp">
+                android:padding="10dp">
 
                 <ImageView
-
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_hourglass_empty_24" />
 
                 <TextView
-                    android:id="@+id/Sanddetails"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text=" Sand Details"
+                    android:text="View Sand Details"
                     android:textSize="20dp"
                     android:textStyle="bold"
-
+                   android:layout_marginTop="20dp"
                     />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/ApproverLogout"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:background="@color/voilet"
             app:cardCornerRadius="15dp"
@@ -254,13 +276,14 @@
                 android:padding="30dp">
 
                 <ImageView
+
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
                 <TextView
-                    android:id="@+id/ApproverLogout"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

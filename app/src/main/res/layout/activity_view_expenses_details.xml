@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewSandDetails"
+    tools:context=".ViewExpensesDetails"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:orientation="vertical"
-        android:background="@drawable/viewsanddet">
+        android:background="@drawable/viewexp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" View Sand Details"
+            android:text=" View Expenses "
             android:textSize="35dp"
             android:textColor="@color/white"
             android:gravity="center"
@@ -26,8 +26,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/sanddesign"
+        tools:listitem="@layout/expensesdesign">
 
-        ></ListView>
-
+    </ListView>
 </LinearLayout>

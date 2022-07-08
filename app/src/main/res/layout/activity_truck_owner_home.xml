@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="30dp"
                 android:fontFamily="serif"
                 android:text="Welcome"
                 android:textColor="@color/ash"
@@ -44,7 +44,7 @@
                 android:textColor="@color/ash"
                 android:textSize="30dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginBottom="30dp"/>
+                android:layout_marginBottom="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +55,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/truckList"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -68,13 +68,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="30dp">
+                    android:padding="10dp">
 
                     <ImageView
 
                         android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/zoom" />
 
                     <TextView
@@ -94,7 +95,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/Profile"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -107,11 +108,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="30dp">
+                   android:padding="10pt">
 
                     <ImageView
                         android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:background="@drawable/ic_baseline_person_24" />
 
@@ -138,7 +139,7 @@
                 android:id="@+id/truckDetail"
 
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -151,13 +152,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="30dp">
+                    android:padding="10dp">
 
                     <ImageView
 
                         android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/ic_baseline_fire_truck_24" />
 
                     <TextView
@@ -165,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="View truck Details"
+                        android:text="View Truck Details"
                         android:textSize="20dp"
                         android:textStyle="bold"
 
@@ -177,7 +179,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/logout"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -190,11 +192,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="30dp">
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="45dp"
-                        android:layout_height="45dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:background="@drawable/ic_baseline_arrow_right_alt_24" />
 
@@ -203,7 +205,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="logout "
+                        android:text="Logout "
                         android:textSize="20dp"
                         android:textStyle="bold" />
                 </LinearLayout>

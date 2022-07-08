@@ -3,14 +3,9 @@ package com.example.sandsyndicate.Authentication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Toast
 import com.example.sandsyndicate.Admin.AdminHome
-import com.example.sandsyndicate.Forgot
+import com.example.sandsyndicate.Approver.ApproverHome
 import com.example.sandsyndicate.Inputer.InputerHome
-import com.example.sandsyndicate.R
-import com.example.sandsyndicate.TruckOwner.TruckOwnerHome
-import com.example.sandsyndicate.databinding.ActivityLabourDetailsBinding
 import com.example.sandsyndicate.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {

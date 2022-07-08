@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1025" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/callicon.xml" value="0.1275" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/curve.xml" value="0.1745" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/cutbackground.xml" value="0.1625" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/edittext.xml" value="0.1275" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_approval_24.xml" value="0.1675" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1265" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_hourglass_full_24.xml" value="0.1675" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1675" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.125" />
@@ -16,24 +18,32 @@
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/ic_wave.xml" value="0.125" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/item.xml" value="0.1675" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/pink.xml" value="0.1215" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/drawable/userdesign.xml" value="0.1245" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout-sw600dp/activity_add_details.xml" value="0.1" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout-sw600dp/activity_approver_home.xml" value="0.2" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_access.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_add_details.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_add_expense_details.xml" value="0.22" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_add_machine_details.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_add_sand_details.xml" value="0.22" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_admin_access.xml" value="0.1731509191962377" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_admin_excel.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_admin_home.xml" value="0.21" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_admin_view.xml" value="0.1" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_approve.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_approve_details.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_approver_home.xml" value="0.18" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_download_excel_file.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_excel.xml" value="0.16374519025224454" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_excel2.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_expenses.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_forgot.xml" value="0.1" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_home.xml" value="0.17528858486532706" />
-        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_inputer_home.xml" value="0.1791363830696879" />
-        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_inputer_home.xml" value="0.15" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_logo.xml" value="0.215625" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_machine_details.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_machine_info.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_main.xml" value="0.12" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_main2.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_profile.xml" value="0.18" />
@@ -44,7 +54,18 @@
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_truck_list.xml" value="0.16374519025224454" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_truck_owner_home.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_expenses.xml" value="0.17528858486532706" />
-        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_sand_details.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_expenses_details.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_machine_details.xml" value="0.22" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_sand_details.xml" value="0.25" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_truck_details.xml" value="0.16374519025224454" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/activity_view_truck_list.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/approvedesign.xml" value="0.25" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/expensesdesign.xml" value="0.25" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/machinedesign.xml" value="0.2" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/sanddesign.xml" value="0.25" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/userdesign.xml" value="0.22" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/viewtruckdetails.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/layout/viewtrucklist.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
         <entry key="..\:/Users/rabbu/AndroidStudioProjects/SandSyndicate/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1025" />
       </map>

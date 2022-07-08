@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Approver.Approve">
+    tools:context=".Admin.Approve">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         android:background="@drawable/approvedetails">
 
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Approve"
-            android:textSize="40dp"
+            android:textSize="35dp"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"

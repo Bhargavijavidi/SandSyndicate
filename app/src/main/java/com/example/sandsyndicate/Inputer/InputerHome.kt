@@ -3,44 +3,46 @@ package com.example.sandsyndicate.Inputer
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.sandsyndicate.*
 import com.example.sandsyndicate.Authentication.Login
-import com.example.sandsyndicate.Expenses
-import com.example.sandsyndicate.MachineDetails
-import com.example.sandsyndicate.R
 import com.example.sandsyndicate.databinding.ActivityInputerHomeBinding
-import kotlin.math.exp
 
 class InputerHome : AppCompatActivity() {
     private lateinit var binding: ActivityInputerHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityInputerHomeBinding.inflate(layoutInflater)
-
-
+        binding = ActivityInputerHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.Sanddetails.setOnClickListener {
-            var sintent=Intent(this,SandDetails::class.java)
-        startActivity(sintent)
+            var sandintent=Intent(this,AddSandDetails::class.java)
+            startActivity(sandintent)
         }
         binding.addmachine.setOnClickListener {
-            var macintent=Intent(this,MachineDetails::class.java)
+          var macintent=Intent(this,AddMachineDetails::class.java)
             startActivity(macintent)
         }
         binding.addexpense.setOnClickListener {
-            var expintent=Intent(this,Expenses::class.java)
+            var expintent=Intent(this,AddExpenseDetails::class.java)
             startActivity(expintent)
-
         }
         binding.viewexpense.setOnClickListener {
-            var veintent=Intent(this,ViewExpenses::class.java)
-            startActivity(veintent)
+           var viewexpintent=Intent(this,ViewExpensesDetails::class.java)
+            startActivity(viewexpintent)
+        }
+        binding.MachineDetails.setOnClickListener {
+            var Mintent=Intent(this,ViewMachineDetails::class.java)
+            startActivity(Mintent)
         }
         binding.viewsanddetails.setOnClickListener {
-            var sintent=Intent(this,ViewSandDetails::class.java)
-            startActivity(sintent)
+            var viewsandintent=Intent(this,ViewSandDetails::class.java)
+            startActivity(viewsandintent)
+        }
+        binding.Profile.setOnClickListener {
+            var profileintent=Intent(this,Profile::class.java)
+            startActivity(profileintent)
         }
         binding.inputterlogout.setOnClickListener {
-          var logintent=Intent(this,Login::class.java)
+            var logintent=Intent(this,Login::class.java)
             startActivity(logintent)
         }
     }

@@ -18,7 +18,6 @@ class Register : AppCompatActivity() {
         binding.Signup.setOnClickListener {
             var signintent=Intent(this,ApproverHome::class.java)
             startActivity(signintent)
-
         }
         binding.Backlogin.setOnClickListener {
             var backintent=Intent(this,TruckOwnerHome::class.java)
