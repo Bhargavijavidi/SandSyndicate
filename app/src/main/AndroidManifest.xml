@@ -14,6 +14,12 @@
         android:theme="@style/Theme.SandSyndicate"
         tools:targetApi="31">
         <activity
+            android:name=".dropdownitem"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="false" />
+        <activity
             android:name=".TruckOwner.ViewTruckDetails"
             android:exported="false" />
         <activity
@@ -73,8 +79,9 @@
         <activity
             android:name=".ViewSandDetails"
             android:exported="false" />
-        <activity android:name=".Approver.ApproveDetails"
-            android:exported="false"/>
+        <activity
+            android:name=".Approver.ApproveDetails"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -6,13 +6,15 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="200dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+           >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,18 +60,18 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="100dp"
-                    android:background="@drawable/licon"
+                    android:background="@drawable/load"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     />
                 <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="100dp"
-                    android:background="@drawable/sletter"
+                    android:background="@drawable/stock"
                     android:layout_marginBottom="30dp"
                     android:layout_marginTop="10dp"
                     />

@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.sandsyndicate.*
 import com.example.sandsyndicate.Authentication.Login
 import com.example.sandsyndicate.databinding.ActivityAdminHomeBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AdminHome : AppCompatActivity() {
     private lateinit var binding:ActivityAdminHomeBinding
@@ -14,30 +15,38 @@ class AdminHome : AppCompatActivity() {
         binding=ActivityAdminHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.approve.setOnClickListener {
-            var appintent=Intent(this,Approve::class.java)
-            startActivity(appintent)
+            startActivity(Intent(this,Approve::class.java))
+
         }
         binding.excel.setOnClickListener {
-            var excelintent=Intent(this,DownloadExcelFIle::class.java)
-        startActivity(excelintent)
+            startActivity(Intent(this,DownloadExcelFIle::class.java))
         }
         binding.MachineDetails.setOnClickListener {
-           var machineintent=Intent(this,ViewMachineDetails::class.java)
-            startActivity(machineintent)
+            startActivity(Intent(this,ViewMachineDetails::class.java))
         }
-       binding.Sanddetails.setOnClickListener {
-           var sandintent=Intent(this,ViewSandDetails::class.java)
-           startActivity(sandintent)
+        binding.Sanddetails.setOnClickListener {
+            startActivity(Intent(this,ViewSandDetails::class.java))
 
         }
         binding.Profile.setOnClickListener {
-            var profileintent=Intent(this,Profile::class.java)
-            startActivity(profileintent)
+            startActivity(Intent(this,Profile::class.java))
         }
+
         binding.logout.setOnClickListener {
-            var logoutintent=Intent(this,Login::class.java)
-            startActivity(logoutintent)
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Logout")
+                .setMessage("Are You Sure You want to logout")
+                .setNegativeButton("No"){dialog, which->
+
+                }
+                .setPositiveButton("yes"){dialog, which->
+                    startActivity(Intent(this,Login::class.java))
+
+                }
+                .show();
+
         }
+
 
 
     }

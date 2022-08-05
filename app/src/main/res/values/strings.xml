@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Sand Syndicate</string>
+    <string-array name="modules">
+        <item>Approver</item>
+        <item>Inputter</item>
+        <item>Truckowner</item>
+    </string-array>
 </resources>

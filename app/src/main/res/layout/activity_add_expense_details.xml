@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Inputer.AddExpenseDetails"
-    android:orientation="vertical">
+    android:orientation="vertical"
+   >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:orientation="vertical"
-        android:background="@drawable/expenses">
+        android:background="@drawable/shopping"
+        android:layout_margin="8dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -33,9 +35,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/credit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Credit"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
                 android:textColor="@color/teal_200"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -47,9 +52,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/debit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Debit"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
                 android:textColor="@color/teal_200"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -61,9 +69,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
                 android:textColor="@color/teal_200"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -81,12 +92,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Credit"
+                android:textSize="15dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Debit"
+                android:textSize="15dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"/>
 
@@ -94,50 +107,54 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:elevation="@dimen/material_emphasis_high_type">
+        >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
+            android:hint="Name"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="why"
+
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:elevation="@dimen/material_emphasis_high_type">
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        />
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/puroseex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Why"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-
-        android:elevation="@dimen/material_emphasis_high_type">
+        >
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/amountex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:hint="Amount"
         />
     </com.google.android.material.textfield.TextInputLayout>
     <Button
+        android:id="@+id/buttonex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"

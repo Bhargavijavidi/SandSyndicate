@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:orientation="vertical"
-        android:background="@drawable/viewexp">
+        android:background="@drawable/viewexp"
+        android:layout_margin="10dp"
+        >
 
         <TextView
             android:layout_width="match_parent"
@@ -23,10 +25,17 @@
             />
 
     </LinearLayout>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listexpense">
+
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/expensesdesign">
 
     </ListView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>

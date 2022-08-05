@@ -7,12 +7,14 @@
     tools:context=".Inputer.AddSandDetails"
     android:orientation="vertical"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="170dp"
         android:orientation="vertical"
-        android:background="@drawable/sand">
+        android:background="@drawable/sand"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -24,58 +26,41 @@
             android:textStyle="bold"
             />
     </LinearLayout>
-    <com.google.android.material.textfield.TextInputLayout
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    app:hintEnabled="false"
+    app:startIconDrawable="@drawable/seat">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/driver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:gravity="center"
-        app:hintEnabled="false"
-        app:hintTextColor="@color/teal_200"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:startIconDrawable="@drawable/seat"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="1"
         android:inputType="text"
-        android:hint="Driver Name"
-        android:textColor="@color/teal_200"
-       android:elevation="@dimen/material_emphasis_high_type" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:hint="Driver Name"/>
+</com.google.android.material.textfield.TextInputLayout>
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
     </Spinner>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:gravity="center"
-        app:hintEnabled="false"
-        app:hintTextColor="@color/teal_200"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
-
+        android:layout_marginLeft="8dp"
+        app:hintEnabled="false">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quality"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:inputType="number"
+            android:layout_height="wrap_content"
             android:hint="Quality Brass"
-            android:textColor="@color/teal_200"
-            android:elevation="@dimen/material_emphasis_high_type"
-            />
+
+            android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,59 +109,52 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
+        android:layout_marginTop="8dp"
         app:hintEnabled="false"
-        app:hintTextColor="@color/teal_200"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         >
-
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/message"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:inputType="text"
             android:hint="Message"
             android:textColor="@color/teal_200"
-            android:elevation="@dimen/material_emphasis_high_type"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
+        android:layout_marginTop="8dp"
         app:hintEnabled="false"
-        app:hintTextColor="@color/teal_200"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
+        >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/siteno"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:inputType="text"
-            android:hint="Site Number"
+            android:hint="Site No"
             android:maxLength="9"
-            android:elevation="@dimen/material_emphasis_high_type"
+            android:textColor="@color/teal_200"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <Button
+        android:id="@+id/subbutton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/purple_700"
         android:text="Submit"
         android:fontFamily="serif"
         >
 
-    </Button>
+    </Button>-->
 </LinearLayout>
