@@ -17,23 +17,28 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/lname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"/>
                 <TextView
+                    android:id="@+id/lparticular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Particular"/>
 
                 <TextView
+                    android:id="@+id/lamount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Amount"/>
                 <TextView
+                    android:id="@+id/lsite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Site Number"/>
                 <TextView
+                    android:id="@+id/ltime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Time Stamp"/>
@@ -44,12 +49,14 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <ImageView
+                    android:id="@+id/creditcard"
                     android:layout_width="50dp"
                     android:layout_height="45dp"
                     android:background="@drawable/ic_baseline_credit_card_24"
                     android:layout_marginLeft="100dp"
                     android:layout_marginBottom="10dp"/>
                 <ImageView
+                    android:id="@+id/debitcard"
                     android:layout_width="50dp"
                     android:layout_height="45dp"
                     android:background="@drawable/ic_baseline_local_atm_24"

@@ -22,6 +22,7 @@ class AddExpenseDetails : AppCompatActivity() {
     var name=""
     var purpose=""
     var amount=""
+    var particular=""
 
     private lateinit var binding: ActivityAddExpenseDetailsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +45,7 @@ class AddExpenseDetails : AppCompatActivity() {
         name = binding.nameex.text.toString()
         purpose = binding.puroseex.text.toString()
         amount = binding.amountex.text.toString()
-
+        particular=binding.eparticular.text.toString()
 
         if (total.isEmpty()) {
             binding.total.error = "This field shouldn't be empty"
@@ -61,6 +62,9 @@ class AddExpenseDetails : AppCompatActivity() {
         else if (amount.isEmpty()) {
             binding.amountex.error = "This field shouldn't be empty"
         }
+        else if(particular.isEmpty()){
+            binding.eparticular.error="This field shouldn't be empty"
+        }
         else {
           insertData()
         }
@@ -69,6 +73,10 @@ class AddExpenseDetails : AppCompatActivity() {
         var insXP=database.getReference("ExpensesDeeds").child(onlyDate()).child(onlyTime())
         insXP.child("Name").setValue(binding.nameex.text.toString())
         insXP.child("Credit").setValue(binding.credit.text.toString())
+        insXP.child("debit").setValue(binding.debit.text.toString())
+        insXP.child("purpose").setValue(binding.puroseex.text.toString())
+        insXP.child("amount").setValue(binding.amountex.text.toString())
+        insXP.child("particular").setValue(binding.eparticular.text.toString())
         refreshtf()
     }
     fun onlyDate():String{
