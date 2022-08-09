@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.example.sandsyndicate.R
+import com.example.sandsyndicate.databinding.ActivityApproveBinding
 import com.example.sandsyndicate.databinding.ActivityDownloadExcelFileBinding
 
 class DownloadExcelFIle : AppCompatActivity() {
@@ -11,6 +12,7 @@ class DownloadExcelFIle : AppCompatActivity() {
     private lateinit var binding:ActivityDownloadExcelFileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityDownloadExcelFileBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar = supportActionBar!!
         actionBar.title = "back"

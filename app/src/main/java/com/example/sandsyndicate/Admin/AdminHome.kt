@@ -12,22 +12,25 @@ class AdminHome : AppCompatActivity() {
     private lateinit var binding:ActivityAdminHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityAdminHomeBinding.inflate(layoutInflater)
+        binding = ActivityAdminHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.approve.setOnClickListener {
-            startActivity(Intent(this,Approve::class.java))
+            startActivity(Intent(this, Approve::class.java))
 
         }
         binding.excel.setOnClickListener {
-            startActivity(Intent(this,DownloadExcelFIle::class.java))
+            startActivity(Intent(this, DownloadExcelFIle::class.java))
         }
         binding.MachineDetails.setOnClickListener {
-            startActivity(Intent(this,ViewMachineDetails::class.java))
+            startActivity(Intent(this, ViewMachineDetails::class.java))
         }
         binding.Sanddetails.setOnClickListener {
-            startActivity(Intent(this,ViewSandDetails::class.java))
+            startActivity(Intent(this, ViewSandDetails::class.java))
 
         }
+        binding.expdetails.setOnClickListener{
+            startActivity(Intent(this,ViewExpensesDetails::class.java))
+    }
         binding.Profile.setOnClickListener {
             startActivity(Intent(this,Profile::class.java))
         }

@@ -17,35 +17,41 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/macname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Machine Name"
                     />
                 <TextView
+                    android:id="@+id/macfuel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Fuel"
                     />
                 <TextView
+                    android:id="@+id/macstart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Start Number"
                     />
                 <TextView
+                    android:id="@+id/macend"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="End Number"
                     />
                 <TextView
+                    android:id="@+id/macdriver"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Driver Name"
                     />
-                <TextView
+                <!--<TextView
+                    android:id="@+id/mactime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Time Stamp"
-                    />
+                    />-->
 
             </LinearLayout>
         </LinearLayout>

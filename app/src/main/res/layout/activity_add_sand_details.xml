@@ -7,9 +7,16 @@
     tools:context=".Inputer.AddSandDetails"
     android:orientation="vertical"
     >
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:orientation="vertical"
         android:background="@drawable/sand"
         android:layout_marginTop="5dp"
@@ -33,30 +40,43 @@
     android:layout_marginRight="10dp"
     android:layout_marginTop="8dp"
     app:hintEnabled="false"
-    app:startIconDrawable="@drawable/seat">
+    android:layout_margin="10dp"
+    >
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/driver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="Driver Name"/>
+        android:hint="Driver Name"
+        />
 </com.google.android.material.textfield.TextInputLayout>
-    <Spinner
+    <!--<Spinner
         android:layout_width="match_parent"
         android:layout_height="40dp">
-    </Spinner>
+
+    </Spinner>-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
+       android:layout_margin="10dp"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/truck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Truck number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         app:hintEnabled="false">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/quality"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Quality Brass"
-
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,9 +86,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="left"
-        android:layout_margin="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         >
         <RadioButton
             android:layout_width="wrap_content"
@@ -109,10 +127,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+       android:layout_margin="10dp"
         android:gravity="center"
-        android:layout_marginTop="8dp"
         app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -128,10 +144,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:gravity="center"
-        android:layout_marginTop="8dp"
+        android:layout_margin="10dp"
         app:hintEnabled="false"
         >
         <com.google.android.material.textfield.TextInputEditText
@@ -157,4 +171,6 @@
         >
 
     </Button>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

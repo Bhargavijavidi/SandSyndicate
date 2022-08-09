@@ -18,19 +18,23 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"/>
                 <TextView
+                    android:id="@+id/useremail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="E-mail"/>
                 <TextView
+                    android:id="@+id/usertype"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Type"/>
             </LinearLayout>
           <ImageView
+              android:id="@+id/userphone"
               android:layout_width="50dp"
               android:layout_height="50dp"
               android:background="@drawable/callicon"

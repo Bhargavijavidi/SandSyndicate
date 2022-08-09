@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:text="Particular"/>
 
+
                 <TextView
                     android:id="@+id/lamount"
                     android:layout_width="match_parent"
@@ -37,11 +38,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Site Number"/>
-                <TextView
+               <!-- <TextView
                     android:id="@+id/ltime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Time Stamp"/>
+                android:text="Time Stamp"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

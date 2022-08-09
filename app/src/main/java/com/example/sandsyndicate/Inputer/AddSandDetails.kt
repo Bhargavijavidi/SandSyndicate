@@ -12,8 +12,9 @@ import java.util.*
 
 class AddSandDetails : AppCompatActivity() {
     private lateinit var actionBar: ActionBar
-    private var database=Firebase.database("https://sand-syndicate-default-rtdb.asia-southeast1.firebasedatabase.app/1")
+    private var database=Firebase.database("https://sand-syndicate-default-rtdb.asia-southeast1.firebasedatabase.app/")
     var drivername=""
+    var Trucknumber=""
     var qualitybrass=""
     var message=""
     var sitenumber=""
@@ -33,11 +34,15 @@ class AddSandDetails : AppCompatActivity() {
     }
     private fun validsand(){
         drivername=binding.driver.text.toString()
+        Trucknumber=binding.truck.text.toString()
         qualitybrass=binding.quality.text.toString()
         message=binding.message.text.toString()
         sitenumber=binding.siteno.text.toString()
         if(drivername.isEmpty()){
             binding.driver.error="This field shouldn't be empty"
+        }
+        else if(Trucknumber.isEmpty()){
+            binding.truck.error="This field shouldn't be empty"
         }
         else if(qualitybrass.isEmpty()){
             binding.quality.error="This field shouldn't be empty"
@@ -56,6 +61,7 @@ class AddSandDetails : AppCompatActivity() {
     private fun insertData(){
         var insSd=database.getReference("Sanddeets").child(onlyDate()).child(onlyTime())
         insSd.child("Driver Name").setValue(binding.driver.text.toString())
+        insSd.child("Truck number").setValue(binding.truck.text.toString())
         insSd.child("Quality brass").setValue(binding.quality.text.toString())
         insSd.child("Message").setValue(binding.message.text.toString())
         insSd.child("site number").setValue(binding.siteno.text.toString())

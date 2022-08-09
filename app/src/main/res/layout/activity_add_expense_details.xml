@@ -7,9 +7,19 @@
     tools:context=".Inputer.AddExpenseDetails"
     android:orientation="vertical"
    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         android:background="@drawable/shopping"
         android:layout_margin="0dp">
@@ -107,16 +117,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        app:boxBackgroundMode="none"
+       android:layout_margin="4dp"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameex"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:inputType="text"
             android:hint="Name"
             />
@@ -124,27 +130,20 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_margin="4dp"
        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/puroseex"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:hint="Why"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+       android:layout_margin="4dp"
         >
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -152,17 +151,32 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/eparticular"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Particular"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Particular"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp">
+               android:layout_margin="4dp">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/expsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Site number"
+                android:layout_margin="4dp"
+                >
 
             </com.google.android.material.textfield.TextInputEditText>
+
         </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/amountex"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Amount"
         />
@@ -177,5 +191,6 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/ash"
         />
-
+      </LinearLayout>
+    </ScrollView>
     </LinearLayout>

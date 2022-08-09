@@ -85,7 +85,7 @@ class Register : AppCompatActivity() {
         .addOnFailureListener {
             Toast.makeText(this,it.message,Toast.LENGTH_LONG).show()
         }
-        TODO("Not yet implemented")
+
     }
 
     private fun insertData(uniqueid: String) {
@@ -99,6 +99,8 @@ class Register : AppCompatActivity() {
          sharedPreferences(name.toString(),email.toString(),mobilenumber.toString(),timestamp.toString()) {
 
              //switch case
+
+
              when (type) {
                  "Approver" ->
                      startActivity(Intent(this, ApproverHome::class.java))

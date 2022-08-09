@@ -23,33 +23,39 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/sanddriver"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Driver Name" />
 
                 <TextView
+                    android:id="@+id/sandtruck"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Truck Number" />
 
                 <TextView
+                    android:id="@+id/sandquality"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Brass Quality" />
 
                 <TextView
+                    android:id="@+id/sandpayment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Payment" />
 
                 <TextView
+                    android:id="@+id/sandmessage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Message" />
-                <TextView
+               <!-- <TextView
+                    android:id="@+id/sandtime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Time Stamp" />
+                    android:text="Time Stamp" />-->
 
             </LinearLayout>
 
@@ -60,6 +66,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/sandimg1"
                     android:layout_width="60dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="100dp"
@@ -68,6 +75,7 @@
                     android:layout_marginBottom="10dp"
                     />
                 <ImageView
+                    android:id="@+id/sandimg2"
                     android:layout_width="60dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="100dp"

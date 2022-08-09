@@ -13,16 +13,18 @@ import com.google.firebase.ktx.Firebase
 import java.text.SimpleDateFormat
 import java.util.*
 
-class AddExpenseDetails : AppCompatActivity() {
+class
+AddExpenseDetails : AppCompatActivity() {
     private lateinit var actionBar: ActionBar
     private var database=Firebase.database("https://sand-syndicate-default-rtdb.asia-southeast1.firebasedatabase.app/")
     var total=""
     var credit=""
     var debit=""
     var name=""
-    var purpose=""
+    var why=""
     var amount=""
-    var particular=""
+    var Particular=""
+    var sitenumber=""
 
     private lateinit var binding: ActivityAddExpenseDetailsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,10 +45,10 @@ class AddExpenseDetails : AppCompatActivity() {
         credit = binding.credit.text.toString()
         debit = binding.debit.text.toString()
         name = binding.nameex.text.toString()
-        purpose = binding.puroseex.text.toString()
+        why = binding.puroseex.text.toString()
         amount = binding.amountex.text.toString()
-        particular=binding.eparticular.text.toString()
-
+        Particular=binding.eparticular.text.toString()
+        sitenumber=binding.expsite.text.toString()
         if (total.isEmpty()) {
             binding.total.error = "This field shouldn't be empty"
         } else if (credit.isEmpty()) {
@@ -56,14 +58,17 @@ class AddExpenseDetails : AppCompatActivity() {
             binding.debit.error = "This field shouldn't be empty "
         } else if (name.isEmpty()) {
             binding.nameex.error = "This field shouldn't be empty"
-        } else if (purpose.isEmpty()) {
+        } else if (why.isEmpty()) {
             binding.puroseex.error = "This field shouldn't be empty"
         }
         else if (amount.isEmpty()) {
             binding.amountex.error = "This field shouldn't be empty"
         }
-        else if(particular.isEmpty()){
+        else if(Particular.isEmpty()){
             binding.eparticular.error="This field shouldn't be empty"
+        }
+        else if (sitenumber.isEmpty()){
+            binding.expsite.error="This field shouldn't be empty"
         }
         else {
           insertData()
@@ -74,9 +79,10 @@ class AddExpenseDetails : AppCompatActivity() {
         insXP.child("Name").setValue(binding.nameex.text.toString())
         insXP.child("Credit").setValue(binding.credit.text.toString())
         insXP.child("debit").setValue(binding.debit.text.toString())
-        insXP.child("purpose").setValue(binding.puroseex.text.toString())
+        insXP.child("Why").setValue(binding.puroseex.text.toString())
         insXP.child("amount").setValue(binding.amountex.text.toString())
-        insXP.child("particular").setValue(binding.eparticular.text.toString())
+        insXP.child("Particular").setValue(binding.eparticular.text.toString())
+        insXP.child("sitenumber").setValue(binding.expsite.text.toString())
         refreshtf()
     }
     fun onlyDate():String{

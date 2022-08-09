@@ -11,7 +11,8 @@ import com.google.firebase.ktx.Firebase
 import java.text.SimpleDateFormat
 import java.util.*
 
-class AddMachineDetails : AppCompatActivity() {
+class
+AddMachineDetails : AppCompatActivity() {
     private lateinit var actionBar: ActionBar
     private var database =
         Firebase.database("https://sand-syndicate-default-rtdb.asia-southeast1.firebasedatabase.app/")
@@ -59,10 +60,10 @@ class AddMachineDetails : AppCompatActivity() {
 
     private fun insertData() {
         var insMd = database.getReference("MachineDeets").child(onlyDate()).child(onlyTime())
-        insMd.child("DriverName").setValue(binding.drivername.text.toString())
+        insMd.child("Drivername").setValue(binding.drivername.text.toString())
         insMd.child("Fuel").setValue(binding.fuel.text.toString())
-        insMd.child("Start number").setValue(binding.startno.text.toString())
-        insMd.child("End number").setValue(binding.endno.text.toString())
+        insMd.child("Startnumber").setValue(binding.startno.text.toString())
+        insMd.child("Endnumber").setValue(binding.endno.text.toString())
         insMd.child("Machine name").setValue(binding.machine.text.toString())
         refreshtf()
     }
@@ -94,7 +95,7 @@ class AddMachineDetails : AppCompatActivity() {
 
     }
 
-    fun currentTimeDate(): String {
+   /* fun currentTimeDate(): String {
         var calendar: Calendar
         var simpleDateFormat: SimpleDateFormat
         var date: String
@@ -102,7 +103,7 @@ class AddMachineDetails : AppCompatActivity() {
         simpleDateFormat = SimpleDateFormat("dd-MM-yyyy HH:mm:ss")
         date = simpleDateFormat.format(calendar.time)
         return date
-    }
+    }*/
 
     fun refreshtf() {
         startActivity(intent)
