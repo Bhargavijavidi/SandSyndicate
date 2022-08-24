@@ -93,7 +93,7 @@ class AddSandDetails : AppCompatActivity() {
 
 
     }
-    fun currentTimeDate():String{
+    /*fun currentTimeDate():String{
         var calendar: Calendar
         var simpleDateFormat: SimpleDateFormat
         var date:String
@@ -101,7 +101,7 @@ class AddSandDetails : AppCompatActivity() {
         simpleDateFormat= SimpleDateFormat("dd-MM-yyyy HH:mm:ss")
         date =simpleDateFormat.format(calendar.time)
         return date
-    }
+    }*/
     fun refreshtf(){
         startActivity(intent)
         finish()

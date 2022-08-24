@@ -13,13 +13,13 @@ import org.w3c.dom.Text
 import java.sql.Time
 
 class sandadapter(private val context: Activity,private val arrayList: ArrayList<sanddata>):
-    ArrayAdapter<sanddata>(context, R.layout.sanddesign) {
+    ArrayAdapter<sanddata>(context, R.layout.sanddesign,arrayList) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater:LayoutInflater= LayoutInflater.from(context)
         val view:View=inflater.inflate(R.layout.sanddesign,null)
         val Drivername:TextView=view.findViewById(R.id.sanddriver)
         val Trucknumber:TextView=view.findViewById(R.id.sandtruck)
-        val Brassquality:TextView=view.findViewById(R.id.sandquality)
+        val brassquality:TextView=view.findViewById(R.id.sandquality)
         val Payment:TextView=view.findViewById(R.id.sandpayment)
         val Message:TextView=view.findViewById(R.id.sandmessage)
         val img3:ImageView=view.findViewById(R.id.sandimg1)
@@ -28,7 +28,7 @@ class sandadapter(private val context: Activity,private val arrayList: ArrayList
         Image.setImageResource(arrayList[position].Image)*/
         Drivername.text=arrayList[position].Drivername
         Trucknumber.text=arrayList[position].Trucknumber
-        Brassquality.text=arrayList[position].Qualitybrass
+        brassquality.text=arrayList[position].brassQuality
         Payment.text=arrayList[position].Payment
         Message.text=arrayList[position].Message
         img3.setImageResource(arrayList[position].img3)

@@ -113,15 +113,11 @@
             android:layout_height="wrap_content"
             android:text="Cash"
             android:textStyle="bold"/>
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Online mode"
-            android:textStyle="bold"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="credit"
+            android:text="credit card"
             android:textStyle="bold"/>
     </RadioGroup>
     <com.google.android.material.textfield.TextInputLayout

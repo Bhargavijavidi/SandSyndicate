@@ -14,16 +14,16 @@ class TruckOwnerHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTruckOwnerHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.truckList.setOnClickListener {
-            startActivity(Intent(this,ViewTruckDetails::class.java))
 
-        }
         binding.Profile.setOnClickListener {
             startActivity(Intent(this,Profile::class.java))
         }
-        binding.truckDetail.setOnClickListener {
-            startActivity(Intent(this,ViewTruckDetails::class.java))
+        binding.truckList.setOnClickListener{
+            startActivity(Intent(this,ViewTruckList::class.java
+            ))
         }
+
+
         binding.trucklogout.setOnClickListener {
             MaterialAlertDialogBuilder(this,)
                 .setTitle("Logout")

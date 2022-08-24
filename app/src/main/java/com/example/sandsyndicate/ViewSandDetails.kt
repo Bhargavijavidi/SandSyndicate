@@ -44,7 +44,7 @@ class ViewSandDetails : AppCompatActivity() {
                             d.child("Truck number").value.toString(),
                             d.child("Quality brass").value.toString(),
                             d.child("Message").value.toString(),
-                            d.child("sitenumber").value.toString(),
+                            d.child("site number").value.toString(),
                             R.drawable.load,
                             R.drawable.stock)
                         sandarraylist.add(l)

@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/ash"
+    >
     <ImageView
        android:id="@+id/mainbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/myproject4"
+        android:background="@drawable/ic_sand_fix"
+
+
         />
 
 </LinearLayout>

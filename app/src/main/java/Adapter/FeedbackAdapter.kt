@@ -10,8 +10,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.sandsyndicate.R
 
-class FeedbackAdapter(private val context:Activity,private val arrayList: ArrayList<Feedbackdata>):ArrayAdapter<Feedbackdata>(context,
-    R.layout.expensesdesign,arrayList) {
+class FeedbackAdapter(private val context:Activity,private val arrayList: ArrayList<Feedbackdata>):
+    ArrayAdapter<Feedbackdata>(context,R.layout.expensesdesign,arrayList) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater:LayoutInflater= LayoutInflater.from(context)
         val view:View=inflater.inflate(R.layout.expensesdesign,null)

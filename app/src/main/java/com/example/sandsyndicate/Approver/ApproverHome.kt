@@ -14,8 +14,8 @@ class ApproverHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityApproverHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.details.setOnClickListener {
-            startActivity(Intent(this,ApproveDetails::class.java))
+        binding.details.setOnClickListener{
+            startActivity(Intent(this,addapproverlist::class.java))
         }
         binding.Approverprofile.setOnClickListener {
             startActivity(Intent(this,Profile::class.java))

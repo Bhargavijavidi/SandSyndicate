@@ -23,6 +23,9 @@ class InputerHome : AppCompatActivity() {
         binding.addexpense.setOnClickListener {
             startActivity(Intent(this,AddExpenseDetails::class.java))
         }
+        binding.inputtertrucklist.setOnClickListener{
+            startActivity(Intent(this,addtrucklist::class.java))
+        }
         binding.viewexpense.setOnClickListener {
             startActivity(Intent(this,ViewExpensesDetails::class.java))
         }

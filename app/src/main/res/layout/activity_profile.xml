@@ -21,12 +21,12 @@
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Name"
             android:id="@+id/proname"
             android:inputType="text"
-            android:background="@color/white"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -37,12 +37,14 @@
         android:layout_height="wrap_content">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Designation"
             android:inputType="text"
             android:id="@+id/prodesignation"
             android:layout_marginLeft="10dp"
-            android:background="@color/white"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -53,10 +55,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:background="@color/white"
             android:hint="Email id"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:id="@+id/promail"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,11 +70,12 @@
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:hint="Address"
             android:id="@+id/proaddress"
             android:inputType="text"
-            android:background="@color/white"
+           android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -80,9 +84,11 @@
         android:layout_height="40dp"
         android:text="EDIT"
         android:id="@+id/proedit"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
+        android:background="@color/ash"
         >
 
     </Button>

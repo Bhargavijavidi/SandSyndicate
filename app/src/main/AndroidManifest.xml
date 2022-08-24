@@ -14,13 +14,16 @@
         android:theme="@style/Theme.SandSyndicate"
         tools:targetApi="31">
         <activity
+            android:name=".Approver.addapproverlist"
+            android:exported="false" />
+        <activity
+            android:name=".Inputer.addtrucklist"
+            android:exported="false" />
+        <activity
             android:name=".dropdownitem"
             android:exported="false" />
         <activity
             android:name=".ForgotActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TruckOwner.ViewTruckDetails"
             android:exported="false" />
         <activity
             android:name=".Inputer.AddExpenseDetails"
@@ -35,9 +38,6 @@
             android:name=".TruckOwner.ViewTruckList"
             android:exported="false" />
         <activity
-            android:name=".Admin.DownloadExcelFIle"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -50,7 +50,7 @@
             android:name=".Approver.ApproverHome"
             android:exported="false" />
         <activity
-            android:name=".Admin.Approve"
+            android:name=".Admin.viewapproverlist"
             android:exported="false" />
         <activity
             android:name=".TruckOwner.TruckOwnerHome"
@@ -78,9 +78,6 @@
             android:exported="false" />
         <activity
             android:name=".ViewSandDetails"
-            android:exported="false" />
-        <activity
-            android:name=".Approver.ApproveDetails"
             android:exported="false" />
     </application>
 

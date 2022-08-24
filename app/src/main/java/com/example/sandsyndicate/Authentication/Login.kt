@@ -60,7 +60,7 @@ class Login : AppCompatActivity() {
     private fun loginAccess() {
         emailid = binding.USER.text.toString()
         password = binding.PASSWORD.text.toString()
-        if (!Patterns.EMAIL_ADDRESS.matcher(emailid).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(emailid).matches()  ) {
             binding.USER.error = "Invalid email id"
         } else if (password.isEmpty()) {
             binding.PASSWORD.error = "Password is not valid"

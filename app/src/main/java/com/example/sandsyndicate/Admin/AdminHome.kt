@@ -14,12 +14,8 @@ class AdminHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAdminHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.approve.setOnClickListener {
-            startActivity(Intent(this, Approve::class.java))
-
-        }
-        binding.excel.setOnClickListener {
-            startActivity(Intent(this, DownloadExcelFIle::class.java))
+        binding.approve.setOnClickListener{
+            startActivity(Intent(this,viewapproverlist::class.java))
         }
         binding.MachineDetails.setOnClickListener {
             startActivity(Intent(this, ViewMachineDetails::class.java))

@@ -1,11 +1,13 @@
 package com.example.sandsyndicate
 
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import com.example.sandsyndicate.Authentication.Register
 import com.example.sandsyndicate.databinding.ActivityProfileBinding
 
 class Profile : AppCompatActivity() {
@@ -25,6 +27,21 @@ class Profile : AppCompatActivity() {
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
         val sharedPreferences: SharedPreferences = this.getSharedPreferences(shared, MODE_PRIVATE)
+       if(name.isEmpty())        {
+           binding.proname.error="This field shouldn't be emppty"
+       }
+        else if(designation.isEmpty()){
+            binding.prodesignation.error="This field shouldn't be emppty"
+       }
+        else if(emailid.isEmpty()){
+            binding.proedit.error="This field shouldn't be emppty"
+       }
+        else if(address.isEmpty()){
+            binding.proaddress.error="This field shouldn't be emppty"
+       }
+        binding.proedit.setOnClickListener {
+            startActivity(Intent(this,Register::class.java))
+        }
         Toast.makeText(this,sharedPreferences.getString("Name","default"),Toast.LENGTH_LONG).show()
     }
 

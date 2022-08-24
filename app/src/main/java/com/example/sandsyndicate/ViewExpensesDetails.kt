@@ -42,7 +42,7 @@ class ViewExpensesDetails : AppCompatActivity() {
                     for (z in baby.children) {
                         val mainarray = Feedbackdata(
                             z.child("Name").value.toString(),
-                            z.child("Particular").value.toString(),
+                            z.child("Purpose").value.toString(),
                             z.child("amount").value.toString(),
                             z.child("sitenumber").value.toString(),
                             R.drawable.ic_baseline_credit_card_24,
@@ -57,7 +57,7 @@ class ViewExpensesDetails : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
-        expensearraylist.reverse()
+        expensearraylist
         binding.Firstlist.adapter = FeedbackAdapter(this@ViewExpensesDetails, expensearraylist)
     }
     fun refreshtofinish(){

@@ -23,7 +23,6 @@ AddExpenseDetails : AppCompatActivity() {
     var name=""
     var why=""
     var amount=""
-    var Particular=""
     var sitenumber=""
 
     private lateinit var binding: ActivityAddExpenseDetailsBinding
@@ -36,7 +35,7 @@ AddExpenseDetails : AppCompatActivity() {
         actionBar.title = "back"
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
-        binding.buttonex.setOnClickListener {
+        binding.buttonex.setOnClickListener (){
          valided()
         }
     }
@@ -47,7 +46,6 @@ AddExpenseDetails : AppCompatActivity() {
         name = binding.nameex.text.toString()
         why = binding.puroseex.text.toString()
         amount = binding.amountex.text.toString()
-        Particular=binding.eparticular.text.toString()
         sitenumber=binding.expsite.text.toString()
         if (total.isEmpty()) {
             binding.total.error = "This field shouldn't be empty"
@@ -64,9 +62,6 @@ AddExpenseDetails : AppCompatActivity() {
         else if (amount.isEmpty()) {
             binding.amountex.error = "This field shouldn't be empty"
         }
-        else if(Particular.isEmpty()){
-            binding.eparticular.error="This field shouldn't be empty"
-        }
         else if (sitenumber.isEmpty()){
             binding.expsite.error="This field shouldn't be empty"
         }
@@ -79,9 +74,8 @@ AddExpenseDetails : AppCompatActivity() {
         insXP.child("Name").setValue(binding.nameex.text.toString())
         insXP.child("Credit").setValue(binding.credit.text.toString())
         insXP.child("debit").setValue(binding.debit.text.toString())
-        insXP.child("Why").setValue(binding.puroseex.text.toString())
+        insXP.child("Purpose").setValue(binding.puroseex.text.toString())
         insXP.child("amount").setValue(binding.amountex.text.toString())
-        insXP.child("Particular").setValue(binding.eparticular.text.toString())
         insXP.child("sitenumber").setValue(binding.expsite.text.toString())
         refreshtf()
     }
@@ -112,7 +106,7 @@ AddExpenseDetails : AppCompatActivity() {
     }
 
 
-    fun currentTimeDate():String{
+    /*  fun currentTimeDate():String{
         var calendar:Calendar
         var simpleDateFormat:SimpleDateFormat
         var date:String
@@ -120,7 +114,7 @@ AddExpenseDetails : AppCompatActivity() {
         simpleDateFormat= SimpleDateFormat("dd-MM-yyyy HH:mm:ss")
         date =simpleDateFormat.format(calendar.time)
         return date
-    }
+    }*/
     fun refreshtf() {
         startActivity(intent)
         finish()

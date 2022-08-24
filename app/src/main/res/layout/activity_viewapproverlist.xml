@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Admin.Approve"
+    tools:context=".Admin.viewapproverlist"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,11 +12,10 @@
         android:orientation="vertical"
         android:background="@drawable/approvedetails"
         android:layout_margin="10dp">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Approve"
+            android:text="Approved"
             android:textSize="35dp"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
@@ -26,19 +25,18 @@
 
     </LinearLayout>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/apprefresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:id="@+id/apprefresh">
+       >
         <ListView
-            android:id="@+id/applist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/applist"
             tools:listitem="@layout/approvedesign">
 
         </ListView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-
 
 </LinearLayout>

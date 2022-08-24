@@ -24,5 +24,20 @@
             />
 
     </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listtruck">
 
-</LinearLayout>
+
+    <ListView
+        android:id="@+id/trucklistlast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/truckdesign"
+ >
+
+    </ListView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
